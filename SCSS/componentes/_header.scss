@@ -1,0 +1,45 @@
+.inicio{
+    @extend %font-grande;
+    min-height: $mini-altura;
+    text-decoration: underline;
+}
+
+.btn-logo{
+    @extend %transparencia;
+}
+
+.medio{
+    display: flex;
+    align-items: center;
+    min-height: $mini-altura;
+}
+
+.paso{
+    display: inline;
+}
+
+
+#buscador {
+    text-align: center;
+  }
+
+#query {
+    margin: 5px;
+}
+
+.topnav{
+    @extend %font-chica;
+    color:nth($colores,2);
+    margin-bottom: 10px;
+}
+
+.usr_info{
+    margin: 15px;
+    position:absolute;
+    top:0;
+    right:0;
+}
+.copy{
+    @extend %font-chica;
+    color:nth($colores,2);
+}

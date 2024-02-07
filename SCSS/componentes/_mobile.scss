@@ -1,0 +1,128 @@
+/* Mobile */
+@media (max-width: 500px){
+    
+    .hidden-image {
+        display: none;
+    }
+
+    .topfoot img{
+        align-items: center;
+    }
+
+    .btn-logo img{
+        @include volumen(100px,100px);  
+    }
+
+    .carousel-item img{
+        @include volumen(300px,300px);
+    }
+
+    .carousel-indicators{
+        @include volumen(20px,20px);
+    }
+
+    .inicio{
+        margin-left: auto;
+        margin-right: auto;
+        display: table;
+    }
+
+    .third-item{
+        display: none;
+    }
+
+    .fourth-item{
+        display: flex;
+        position:absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+    .offcanvas-body-menu{
+        margin: 5px;
+        margin-left: 10px;
+        align-items: center;
+    }
+
+
+    .info{
+        @extend %justificar-centro;
+        flex-direction: column;
+        @extend %font-chica;
+        overflow: hidden;
+        color:nth($colores,1);  
+    }
+
+    iframe {
+        display: block;
+        margin: 0 auto;
+     }
+
+    .total{
+        @extend %font-grande;
+        text-decoration: underline;
+    }
+
+    /*Contactanos*/
+    .titulos{
+        display: none;
+    }
+
+    .medio{
+        display: flexbox;
+        flex-direction: column;
+    }
+    .direccion{
+        margin-left: 4%;
+        margin-right: 5%;
+    }
+
+    .socials{
+        margin-left: 5%;
+        margin-right: 5%;
+        @extend %font-grande;
+        color:nth($colores,1);
+    
+    }
+    
+    .contacto{
+        margin-left: 10%;
+        margin-right: 5%;
+        @extend %font-grande;
+        color:nth($colores,1);
+    }
+    
+    .extencion{
+        @extend %font-chica;
+        color:nth($colores,1);
+        text-decoration: underline;
+    }
+
+    /* Search bar */
+
+    .searchBar {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    #searchQueryInput {
+        @include volumen(100%,50px);
+        background: nth($colores,8);
+        border: none;
+        border-radius: 1.625rem;
+        padding: 0 3.5rem 0 1.5rem;
+        font-size: 1rem;
+    }
+    
+    #searchQuerySubmit {
+        @include volumen(100px,2.8rem);
+        margin-left: -3.5rem;
+        background: none;
+        border: none;
+    }
+
+    /* End of search bar*/
+
+}

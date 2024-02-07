@@ -1,0 +1,22 @@
+%font-grande{
+    font-family: Russo One;
+    font-size: x-large;
+    text-align: center;
+}
+
+%font-chica{
+    font-family: Roboto;
+    font-size: medium;
+    text-align: center;
+}
+
+%justificar-centro{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+%transparencia{
+    background-color: transparent;
+    border: transparent;
+}
