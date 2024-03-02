@@ -1,0 +1,91 @@
+/*Productos*/
+
+body {
+    background-color: #eee
+}
+
+    
+.card {
+    border-radius: 2px !important;
+    border-color: #e1e7ec;
+}
+
+.mb-30 {
+    margin-bottom: 30px !important;
+    @include volumen(210px,400px);
+    margin-left: 20px;
+    margin-right: 25px;
+}
+
+.mb-31 {
+    margin-bottom: 30px !important;
+    @include volumen(210px,400px);
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.mb-32 {
+    margin-bottom: 30px !important;
+    @include volumen(210px,400px);
+    margin-left: 25px;
+    margin-right: 20px;
+}
+
+.mt-100{
+    justify-content: center;
+}
+
+.card-img-tiles{
+    display: block;
+    border-bottom: 1px solid #e1e7ec;
+}
+
+a{
+    color:nth($colores,1);
+    text-decoration: none !important;
+}
+
+.card-img-tiles>.inner {
+    display: table;
+    width: 100%;
+}
+
+.btn-group-sm>.btn, .btn-sm {
+    padding: .45rem .5rem !important;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+}
+
+.btn.btn-outline-custom {
+    background-color: nth($colores,3);
+    border-color: nth($colores,1);
+    color: nth($colores,1);
+  
+    // Hover effect
+    &:hover {
+      background-color:nth($colores,5); 
+
+    }
+  }
+    
+.ventas{
+    display: flex;
+}
+
+.categorias{
+    margin-right: 100px;
+}
+
+.card{
+
+    &.grow {
+        transition: all .2s ease-in-out;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+}
+
+/**/

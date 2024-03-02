@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Russo+One&display=swap');
 @import "./base/variables";
-@import "../SCSS/base/_extends.scss";
+@import "../SCSS/base/extends.scss";
 @import "../SCSS/base/listas";
 @import "../SCSS/base/mixins";
 @import "../SCSS/componentes/carrito";
@@ -10,22 +10,22 @@
 @import "../SCSS/componentes/desktop";
 @import "../SCSS/componentes/tablet";
 @import "../SCSS/componentes/mobile";
+@import "../SCSS/componentes/productos";
 
 
 
 /*Bases de la pagina*/
 a:link {
-    color:nth($colores,1);
+    color:nth($colores,2);
   }
   
 a:visited {
-    color:nth($colores,1);
+    color:nth($colores,2);
 }
 
 body{
     background-color:nth($colores,3);
     min-height: $mini-altura;
-    
 }
 
 #offcanvasLeft.offcanvas-start{
@@ -34,11 +34,6 @@ body{
 
 :target + .offcanvas {
     right: 0;
-  }
-
-
-header{
-    background-color:nth($colores,4);
 }
 
 .flex-wrapper {
@@ -57,27 +52,6 @@ header{
     margin: 5%;
     @extend %font-grande;
     color:nth($colores,1);
-}
-
-.ventas{
-    display: flex;
-    justify-content: space-between;
-    margin: 15%;
-}
-
-.categorias{
-    margin-right: 100px;
-}
-
-.card{
-
-    &.grow {
-        transition: all .2s ease-in-out;
-
-        &:hover {
-          transform: scale(1.5);
-        }
-      }
 }
 
 .btn-buy{
@@ -109,7 +83,7 @@ header{
     grid-template-columns: repeat(7,7fr);
 }
 
-/**/
+
 
 
 

@@ -1,3 +1,23 @@
+/* Error: From line 7, column 1 of SCSS\base\_extends.scss: 
+ *   ╷
+ * 7 │ %font-chica{
+ *   │ ^^^^^^^^^^^
+ *   ╵
+ * You may not @extend selectors across media queries.
+ *    ,
+ * 20 |         @extend %font-chica;
+ *    |         ^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   SCSS\componentes\_desktop.scss 20:9  @import
+ *   SCSS\styles.scss 10:9                root stylesheet */
 
-
-/*# sourceMappingURL=styles.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: From line 7, column 1 of SCSS\\base\\_extends.scss: \a   \2577 \a 7 \2502  %font-chica{\d\a   \2502  ^^^^^^^^^^^\a   \2575 \aYou may not @extend selectors across media queries.\a    \2577 \a 20 \2502          @extend %font-chica;\d\a    \2502          ^^^^^^^^^^^^^^^^^^^\a    \2575 \a   SCSS\\componentes\\_desktop.scss 20:9  @import\a   SCSS\\styles.scss 10:9                root stylesheet";
+}

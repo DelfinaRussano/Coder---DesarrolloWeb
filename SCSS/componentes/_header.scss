@@ -1,7 +1,6 @@
 .inicio{
     @extend %font-grande;
     min-height: $mini-altura;
-    text-decoration: underline;
 }
 
 .btn-logo{
@@ -18,13 +17,16 @@
     display: inline;
 }
 
-
 #buscador {
     text-align: center;
-  }
+}
 
 #query {
     margin: 5px;
+}
+
+header{
+    background-color:nth($colores,4);
 }
 
 .topnav{

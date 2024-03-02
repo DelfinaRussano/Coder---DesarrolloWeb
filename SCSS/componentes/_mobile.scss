@@ -46,9 +46,13 @@
 
 
     .info{
-        @extend %justificar-centro;
+        display: flex;
+        justify-content: center;
+        align-items:center;
         flex-direction: column;
-        @extend %font-chica;
+        font-family: Roboto;
+        font-size: medium;
+        text-align: center;
         overflow: hidden;
         color:nth($colores,1);  
     }
@@ -59,7 +63,9 @@
      }
 
     .total{
-        @extend %font-grande;
+        font-family: Russo One;
+        font-size: x-large;
+        text-align: center;
         text-decoration: underline;
     }
 
@@ -80,7 +86,9 @@
     .socials{
         margin-left: 5%;
         margin-right: 5%;
-        @extend %font-grande;
+        font-family: Russo One;
+        font-size: x-large;
+        text-align: center;
         color:nth($colores,1);
     
     }
@@ -88,12 +96,16 @@
     .contacto{
         margin-left: 10%;
         margin-right: 5%;
-        @extend %font-grande;
+        font-family: Russo One;
+        font-size: x-large;
+        text-align: center;
         color:nth($colores,1);
     }
     
     .extencion{
-        @extend %font-chica;
+        font-family: Roboto;
+        font-size: medium;
+        text-align: center;
         color:nth($colores,1);
         text-decoration: underline;
     }
